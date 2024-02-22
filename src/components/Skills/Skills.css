@@ -1,0 +1,69 @@
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    height: 100vh;
+  }
+  
+  .skills-container .leftBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap:40px;
+  }
+  
+  .skills-container .leftBox h1 {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    font-family: cursive;
+  }
+
+  .skills-container .skill{
+    width: 100%;
+}
+
+  .skills-container .skill .bar{
+background-color: white;
+height: 15px;
+border-radius: 10px;
+width: 100%;
+  }
+  .skills-container .skill p{
+    color: white;
+    font-size: 18px;
+  }
+
+.skills-container .skill .bar .progress{
+    background-color: #AAA5FF;
+    width: 80%;
+    height: 15px;
+    border-radius: 10px;
+}
+
+
+  
+  .skills-container .rightBox {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  
+
+  
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(200px);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(0px);
+    }
+  }
+  

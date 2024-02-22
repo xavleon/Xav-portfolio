@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+}
+nav h1 {
+  font-family: cursive;
+
+  color: #55198b;
+}
+.logo_jl {
+  color: azure;
+}
+.links {
+  display: flex;
+  gap: 60px;
+}
+
+.links a {
+  text-decoration: none;
+  color: azure;
+}
+
+.links a:hover {
+  box-shadow: 0px 0px 0px 10px rgba(237, 45, 237, 1);
+  background-color: rgba(237, 45, 237, 1);
+
+  transform: scale(0.9);
+}

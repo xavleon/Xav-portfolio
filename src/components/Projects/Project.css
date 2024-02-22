@@ -1,0 +1,86 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+
+.projects .cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:50px;
+}
+
+.projects .cards .card{
+    background-color: #171C28;
+    width: 400px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    min-height: 380px;
+    
+}
+.projects .cards .card img{
+    width: 100%;
+}
+
+.projects .cards .card button {
+    padding: 10px 40px;
+    border: none;
+    background-color: #55198b;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .projects .cards .card button:hover {
+    background-color: #ffffff;
+    color: #55198b;
+    transform: scale(0.9);
+  }
+
+  /*
+
+    Event:  Any User interaction with the website
+    11. clicked button
+    2. clicked link
+    3. enter data
+    4. open modal
+
+
+    Event Lisetner: Picking that event up and responding to that.
+
+    onClick
+    onChange
+    onSubmit
+
+
+    Against every we have to make a function, in which we will have our logic to respond to that interaction
+    we will link it with our element
+
+
+
+    In React:
+    1. We can not use for loops
+        alternates: map,  filter, reduce
+    2. We can not conditions (if/else)
+        alternates: ternary op, && class
+
+
+
+        Ternary:
+        if(role === admin)
+            // this part
+        else
+            // that part
+
+        role === admin  ? 'this part' : 'that part'
+
+
+  */

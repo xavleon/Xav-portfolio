@@ -1,0 +1,90 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  height: 100vh;
+}
+
+.hero-container .leftBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-container .leftBox h1 {
+  font-size:3rem;
+  margin-bottom: 20px;
+  font-family: cursive;
+}
+.hero-container .leftBox h1 span {
+  color: #ffffff;
+}
+
+.hero-container .leftBox p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  width: 67%;
+  text-align: justify;
+}
+.hero-container .leftBox .buttons {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+
+.buttons button {
+  padding: 10px 40px;
+  border: none;
+  background-color: #55198b;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #ffffff;
+  color: #55198b;
+  transform: scale(0.9);
+}
+
+.hero-container .rightBox {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 10px;
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.hero-container .rightBox img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.icons-list{
+  display: flex;
+  gap:30px;
+  justify-content: center;
+
+
+
+  margin-bottom: 20px;
+
+}
+.icons-list .icon:hover{
+  transform: scale(0.9);
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(200px);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(0px);
+  }
+}
